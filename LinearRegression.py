@@ -11,13 +11,16 @@ def plotLine(theta0, theta1, X, y):
     max_x = np.max(X) + 100
     min_x = np.min(X) - 100
 
+
     xplot = np.linspace(min_x, max_x, 1000)
     yplot = theta0 + theta1 * xplot
+
 
 
     plt.plot(xplot, yplot, color='#58b970', label='Regression Line')
 
     plt.scatter(X,y)
+    plt.axis([-10, 10, 0, 200])
     plt.show()
 
 
@@ -61,9 +64,10 @@ def LinearRegression(X, y):
     for i in range(0, 1000):
         if i % 100 == 0:
             plotLine(theta0, theta1, X, y)
-        print(cost(theta0, theta1, X, y))
-        theta0, theta1 = updateParameters(theta0, theta1, X, y, 0.01)
-        
+        # print(cost(theta0, theta1, X, y))
+        theta0, theta1 = updateParameters(theta0, theta1, X, y, 0.005)
+
+
 
     
 
