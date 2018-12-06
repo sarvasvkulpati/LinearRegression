@@ -61,7 +61,34 @@ value.
 
 Now that we have a value for how wrong our function is, we need to adjust the function to reduce this error.
 
-# WORK IN PROGRESS
+### Calculating Derivatives
+
+If we graph our parameters against the error (i.e graphing the cost function), we'll find that it forms something similar to the graph below. Our goal is to find the lowest point of that graph, where the error is at its lowest. This is called minimising the cost function
+![MSE function](https://github.com/sarvasvkulpati/LinearRegression/blob/master/images/lr7.jpg)
+
+To do this, we need to consider what happens at the bottom of the graph - the gradient is zero. So to minimize the cost function, we need to get the gradient to zero.
+
+The gradient is given by the derivative of the function, and the partial derivatives of the functions are
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\delta&space;}{\delta&space;\theta_{0}}&space;=&space;h_{\theta}(x_{i})-&space;y_{i}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\frac{\delta&space;}{\delta&space;\theta_{0}}&space;=&space;h_{\theta}(x_{i})-&space;y_{i}" title="\frac{\delta }{\delta \theta_{0}} = h_{\theta}(x_{i})- y_{i}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\delta&space;}{\delta&space;\theta_{0}}&space;=&space;(h_{\theta}(x_{i})-&space;y_{i})x_{i}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\frac{\delta&space;}{\delta&space;\theta_{0}}&space;=&space;(h_{\theta}(x_{i})-&space;y_{i})x_{i}" title="\frac{\delta }{\delta \theta_{0}} = (h_{\theta}(x_{i})- y_{i})x_{i}" /></a>
+
+### Updating The Parameters Based On The Learning Rate
+
+Now we need to update our parameters to reduce the gradient. To do this, we use the gradient update rule
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\theta_{0}&space;=&space;\theta_{0}&space;-&space;\alpha\frac{\delta}{\delta&space;\theta_{0}}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\theta_{0}&space;=&space;\theta_{0}&space;-&space;\alpha\frac{\delta}{\delta&space;\theta_{0}}" title="\theta_{0} = \theta_{0} - \alpha\frac{\delta}{\delta \theta_{0}}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\theta_{1}&space;=&space;\theta_{1}&space;-&space;\alpha\frac{\delta}{\delta&space;\theta_{1}}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\theta_{1}&space;=&space;\theta_{1}&space;-&space;\alpha\frac{\delta}{\delta&space;\theta_{1}}" title="\theta_{1} = \theta_{1} - \alpha\frac{\delta}{\delta \theta_{1}}" /></a>
+
+Alpha is what we call the **Learning rate**, which is a small number that allows the parameter to updated by a small amount.
+
+
+## Minimising the Cost Function
+Now we repeat these steps - checking the error, calculating the derivatives, and updating the weights, until the error is as low as possible. This is calle **minimising the cost funtion**
+
+Once your error is minimised, your line should now be the best fit to approximate the data!
 
 
 
