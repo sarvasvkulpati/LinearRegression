@@ -8,6 +8,10 @@ An implementation of Linear Regression from scratch in python 📈. Includes the
 ## Getting Started
 
 1. Download the project on your computer.
+`
+git clone https://github.com/rish-16/LinearRegression.git
+`
+or download the ZIP file
 
 2. Go to the directory with the file: ``` cd LinearRegression ```
 
@@ -82,13 +86,13 @@ Now we need to update our parameters to reduce the gradient. To do this, we use 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\theta_{1}&space;=&space;\theta_{1}&space;-&space;\alpha\frac{\delta}{\delta&space;\theta_{1}}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\theta_{1}&space;=&space;\theta_{1}&space;-&space;\alpha\frac{\delta}{\delta&space;\theta_{1}}" title="\theta_{1} = \theta_{1} - \alpha\frac{\delta}{\delta \theta_{1}}" /></a>
 
-Alpha is what we call the **Learning rate**, which is a small number that allows the parameter to updated by a small amount.
+*Alpha* is what we call the **Learning rate**, which is a small number that allows the parameters to be updated by a small amount. As mentioned above, we are trying to update the gradient such that it's closer to zero (the bottom). The Learning rate helps guide the network to the lowest point on the curve.
 
 
 ## Minimising the Cost Function
-Now we repeat these steps - checking the error, calculating the derivatives, and updating the weights, until the error is as low as possible. This is calle **minimising the cost funtion**
+Now we repeat these steps - checking the error, calculating the derivatives, and updating the weights, until the error is as low as possible. This is called **minimising the cost funtion**.
 
-Once your error is minimised, your line should now be the best fit to approximate the data!
+Once your error is minimised, your line should now be the best possible fit to approximate the data!
 
 
 
