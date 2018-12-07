@@ -9,7 +9,7 @@ An implementation of Linear Regression from scratch in python 📈. Includes the
 
 1. Download the project on your computer.
 `
-git clone https://github.com/rish-16/LinearRegression.git
+git clone https://github.com/sarvasvkulpati/LinearRegression
 `
 or download the ZIP file
 
@@ -31,7 +31,7 @@ it's related to another variable, for example, the price it sells at.
 ![Linear data example](https://github.com/sarvasvkulpati/LinearRegression/blob/master/images/lr1.jpg)
 
 We use it when the data has a **linear relationship**, which means that when you plot the points on a graph, the
-data lies approximately in the shape of a line.
+data lies approximately in the shape of a straight line.
 
 Linear Regression involves a couple of steps:
 1. Randomly initialising parameters for the hypothesis function
@@ -45,14 +45,14 @@ The linear equation is the standard form that represents a straight line on a gr
 and b represents the y-intercept.
 The **Hypothesis Function** is the exact same function in the notation of Linear Regression.
 ![Hypothesis function](https://github.com/sarvasvkulpati/LinearRegression/blob/master/images/lr2.jpg)
-The two variables we can change-m and b-are represented as parameters theta1 and theta0
+The two variables we can change – m and b – are represented as parameters theta1 and theta0
 
 In the beginning, we **randomly initialize** our parameters, which means we give theta1 and theta0 random values
 to begin with. This will output a random line, maybe something like this:
 ![Randomly initialised parameters](https://github.com/sarvasvkulpati/LinearRegression/blob/master/images/lr4.jpg)
 
 ### The Error Function
-Clearly the line drawn in the graph above is wrong. But how wrong? That's what the error function is for - it 
+Clearly the line drawn in the graph above is wrong. But how wrong is it? That's what the error function is for - it 
 calculates the total error of your graph.
 We'll be using an error function called the Mean Squared Error function, or MSE, represented by the letter J.
 ![MSE function](https://github.com/sarvasvkulpati/LinearRegression/blob/master/images/lr6.jpg)
@@ -86,7 +86,7 @@ Now we need to update our parameters to reduce the gradient. To do this, we use 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\theta_{1}&space;=&space;\theta_{1}&space;-&space;\alpha\frac{\delta}{\delta&space;\theta_{1}}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\theta_{1}&space;=&space;\theta_{1}&space;-&space;\alpha\frac{\delta}{\delta&space;\theta_{1}}" title="\theta_{1} = \theta_{1} - \alpha\frac{\delta}{\delta \theta_{1}}" /></a>
 
-*Alpha* is what we call the **Learning rate**, which is a small number that allows the parameters to be updated by a small amount. As mentioned above, we are trying to update the gradient such that it's closer to zero (the bottom). The Learning rate helps guide the network to the lowest point on the curve.
+*Alpha* is what we call the **Learning rate**, which is a small number that allows the parameters to be updated by a small amount. As mentioned above, we are trying to update the gradient such that it's closer to zero (the bottom). The Learning rate helps guide the network to the lowest point on the curve by small amounts.
 
 
 ## Minimising the Cost Function
