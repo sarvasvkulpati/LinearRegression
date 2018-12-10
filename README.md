@@ -43,8 +43,13 @@ Linear Regression involves a couple of steps:
 ### The Hypothesis Function
 The linear equation is the standard form that represents a straight line on a graph, where m represents the gradient,
 and b represents the y-intercept.
+
+<img src="https://latex.codecogs.com/svg.latex?y&space;=&space;mx&space;&plus;c" title="y = mx +c" />
+
 The **Hypothesis Function** is the exact same function in the notation of Linear Regression.
-![Hypothesis function](https://github.com/sarvasvkulpati/LinearRegression/blob/master/images/lr2.jpg)
+
+<img src="https://latex.codecogs.com/svg.latex?h_{\theta}(x)&space;=&space;\theta_{1}x&space;&plus;&space;\theta_{0}" title="h_{\theta}(x) = \theta_{1}x + \theta_{0}" />
+
 The two variables we can change – m and b – are represented as parameters theta1 and theta0
 
 In the beginning, we **randomly initialize** our parameters, which means we give theta1 and theta0 random values
@@ -55,7 +60,8 @@ to begin with. This will output a random line, maybe something like this:
 Clearly the line drawn in the graph above is wrong. But how wrong is it? That's what the error function is for - it 
 calculates the total error of your graph.
 We'll be using an error function called the Mean Squared Error function, or MSE, represented by the letter J.
-![MSE function](https://github.com/sarvasvkulpati/LinearRegression/blob/master/images/lr6.jpg)
+
+<img src="https://latex.codecogs.com/svg.latex?J(\theta_{0},&space;\theta_{1})&space;=&space;\frac{1}{2}\sum_{i=1}^{m}(h_{\theta}(x_{i})&space;-&space;y_{i})^{2}" title="J(\theta_{0}, \theta_{1}) = \frac{1}{2}\sum_{i=1}^{m}(h_{\theta}(x_{i}) - y_{i})^{2}" />
 
 Now while that may look complicated, what it's doing is actually quite simple. The function J takes our parameters 
 theta0, and theta1 as an input. Then, from every point from 1 to m, where m is the number of points, it calculates 
@@ -67,8 +73,7 @@ Now that we have a value for how wrong our function is, we need to adjust the fu
 
 ### Calculating Derivatives
 
-If we graph our parameters against the error (i.e graphing the cost function), we'll find that it forms something similar to the graph below. Our goal is to find the lowest point of that graph, where the error is at its lowest. This is called minimising the cost function
-![MSE function](https://github.com/sarvasvkulpati/LinearRegression/blob/master/images/lr7.jpg)
+If we graph our parameters against the error (i.e graphing the cost function), we'll find that it forms something similar to the graph below. Our goal is to find the lowest point of that graph, where the error is at its lowest. This is called minimising the cost function.
 
 To do this, we need to consider what happens at the bottom of the graph - the gradient is zero. So to minimize the cost function, we need to get the gradient to zero.
 
