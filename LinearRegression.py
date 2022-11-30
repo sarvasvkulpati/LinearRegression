@@ -72,4 +72,14 @@ def LinearRegression(X, y):
     
 
 
-LinearRegression(X, y)
+
+    
+
+
+LinearRegression(X, y) 
+ 
+ def LinearRegression (theta1,hypothesis, x ,y , alpha) 
+  theta0,hypothesis = derivatives(x,y alpha)  
+noise
+   LinearRegression(x,y,numpy)
+  (X, y) 
